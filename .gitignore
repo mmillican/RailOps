@@ -246,6 +246,7 @@ ModelManifest.xml
 
 api/RailOps.Api/*.db
 
+.vscode/
 
 .DS_Store
 
