@@ -15,9 +15,15 @@
                       <li class="nav-item">
                           <router-link to="/" class="nav-link">Home</router-link>
                       </li>
-                      <li class="nav-item">
-                          <router-link to="/roster/roads" class="nav-link" >Roads</router-link>
-                      </li>
+                      <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" id="navbar-roster-dropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Roster
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="navbar-roster-dropdown">
+                              <router-link to="/roster/engines" class="dropdown-item">Engines</router-link>
+                              <router-link to="/roster/roads" class="dropdown-item" >Roads</router-link>
+                          </div>
+                      </li>>
                   </ul>
                   <!-- <form class="form-inline mt-2 mt-md-0">
                       <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
