@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using RailOps.Api.Data;
+using RailOps.Api.Filters;
 using Swashbuckle.AspNetCore.Swagger;
 
 namespace RailOps.Api
@@ -49,6 +50,7 @@ namespace RailOps.Api
             {
                 c.SwaggerDoc("v1", new Info { Title = "RailOps API", Version = "v1" });
                 
+                c.OperationFilter<FormFileOperationFilter>();
                 // var filePath = Path.Combine(PlatformServices.Default.Application.ApplicationBasePath, "SnackShare.Ap$
                 // c.IncludeXmlComments(filePath);
             });
